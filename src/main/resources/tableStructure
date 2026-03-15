@@ -1,0 +1,22 @@
+
+// Table users_info Schema
+
+create table users_info (
+
+id bigserial primary key,
+
+first_name varchar(50) not null,
+last_name varchar(50),
+
+email varchar(255) not null unique,
+
+gender varchar(20) not null,
+role varchar(30),
+
+number varchar(20) not null,
+address varchar(255),
+
+created_at timestamp,
+updated_at timestamp
+
+);
